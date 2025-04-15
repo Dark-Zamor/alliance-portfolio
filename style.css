@@ -1,36 +1,126 @@
-/* les commentaires en css */
-
-h2 {
-    font-size: 20px;
-    color: red;
-}
-
-h3 {
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.project {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: white;
-}
-
-#tryme {
-    position: absolute;
-    top: 200px;
-    left: 350px;
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    border-radius: 25% 0 25% 0;
+CSS – style.css * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: url(./dbc3f910d7efb61b884fabb55690cd8f.jpg);
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff9f5;
+    color: #333;
+    padding: 20px;
 }
 
-img {
-    border-radius: 10%;
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.left-header h1 {
+    font-size: 40px;
+    color: #3c2f2f;
+    font-weight: bold;
+}
+
+.left-header h1 span {
+    font-weight: 900;
+    display: block;
+    color: #5d4037;
+}
+
+.title {
+    font-size: 18px;
+    color: #6d4c41;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.right-header ul {
+    list-style: none;
+    font-size: 14px;
+    color: #5d4037;
+}
+
+.right-header li {
+    margin-bottom: 8px;
+}
+
+.profile-img {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -40px;
+}
+
+.summary {
+    margin: 60px 0 30px 0;
+    font-size: 16px;
+    color: #4e342e;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.education,
+.experience {
+    width: 48%;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4e342e;
+    border-bottom: 2px solid #d7ccc8;
+    padding-bottom: 5px;
+}
+
+.skills {
+    margin-top: 40px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+    color: #5d4037;
+}
+
+.bar {
+    height: 10px;
+    background-color: #d7ccc8;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background-color: #8d6e63;
 }
